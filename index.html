@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Debraj Naskar - AI/ML Engineer & Cloud Infrastructure Specialist</title>
+    <title>Debraj Naskar - Integration Engineer & Cloud And AI/ML Infrastructure Specialist</title>
     <meta name="description" content="Professional portfolio of Debraj Naskar - Expert in AI/ML, Cloud Computing, DevOps, and Telecom Engineering with 10+ completed enterprise projects">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
+    <div id="cursor-dot"></div>
+    <div class="cursor-trail" id="cursor-trail-1"></div>
+    <div class="cursor-trail" id="cursor-trail-2"></div>
+    <div class="cursor-trail" id="cursor-trail-3"></div>
+    <div class="cursor-trail" id="cursor-trail-4"></div>
+    <div class="cursor-trail" id="cursor-trail-5"></div>
     <!-- Header -->
     <header class="header">
         <nav class="container">
             <div class="nav-brand">
                 <h1 class="brand-name">Debraj Naskar</h1>
-                <p class="brand-tagline">AI/ML Engineer & Cloud Infrastructure Specialist</p>
+                <p class="brand-tagline typewriter">Integration Engineer & Cloud And AI/ML Infrastructure Specialist</p>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
@@ -34,14 +41,14 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">AI/ML Engineer & Cloud Infrastructure Specialist</h1>
-                    <p class="hero-description">Experienced Integration Engineer at Ericsson with 5+ years in telecom infrastructure, cloud computing, and AI/ML implementation. Specialized in network optimization, fault detection, and intelligent automation systems.</p>
+                    <h1 class="hero-title text-gradient-animate">Integration Engineer & Cloud And AI/ML Infrastructure Specialist</h1>                    <p class="hero-description">Experienced Integration Engineer at Ericsson with <span class="text-gradient-animate">3+ years in telecom infrastructure</span>, cloud computing, and AI/ML implementation. Specialized in network optimization, fault detection, and intelligent automation systems.</p>
                     <div class="hero-stats">
                         <div class="stat-item">
-                            <span class="stat-value">10</span>
+                            <span class="stat-value">15+</span>
                             <span class="stat-label">Projects Completed</span>
                         </div>
                         <div class="stat-item">
@@ -77,8 +84,9 @@
 
     <!-- About Section -->
     <section id="about" class="about">
+        <canvas id="about-canvas"></canvas>
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-section-number="01">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
                     <h3>Professional Background</h3>
@@ -124,9 +132,11 @@
                     <div class="info-card">
                         <h4>Certifications</h4>
                         <ul class="cert-list">
-                            <li>AWS Solutions Architect</li>
-                            <li>Kubernetes Administrator</li>
-                            <li>Python Professional</li>
+                            <li>Certified Kubernetes Administrator CKA</li>
+                            <li>Generative AI Foundations Certificate Program by Upgrad And Microsoft</li>
+                            <li>Oracle Cloud Infrastructure 2023 Certified Foundations Associate</li>
+                            <li>AWS Cloud Quest: Cloud Practitioner</li>
+                            <li>Generative AI Certificate Course from Ericsson Degreed</li>
                         </ul>
                     </div>
                 </div>
@@ -136,9 +146,10 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
+        <canvas id="projects-canvas"></canvas>
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
+                <h2 class="section-title" data-section-number="02">Featured Projects</h2>
                 <p class="section-description">Comprehensive portfolio showcasing 10 enterprise-grade applications across AI/ML, Cloud Computing, DevOps, and Telecom Engineering</p>
                 <div class="project-filters">
                     <button class="filter-btn active" data-filter="all">All Projects</button>
@@ -180,11 +191,66 @@
 
             <!-- Projects Grid -->
             <div class="projects-grid">
+                <div class="project-card" data-category="telecom integration migration upgrade">
+        <div class="project-header">
+            <h3 class="project-title">Telecom Integration & Modernization Projects</h3>
+            <div class="project-badges">
+                <span class="badge badge--success">Enterprise</span>
+                <span class="badge badge--category">Telecom & Cloud</span>
+            </div>
+        </div>
+        <div class="project-description">
+            <p>Successfully delivered multiple large-scale <strong>Integration, Migration, Upgrade, Installation, and Modernization</strong> projects across <strong>Bare Metal, Virtual, and Containerized Environments</strong> for global telecom clients.</p>
+        </div>
+        <div class="project-features">
+            <h4>Key Highlights:</h4>
+            <ul>
+                <li>Led 80+ software deployments with zero post-deployment issues</li>
+                <li>Delivered 24/7 support, reducing incident resolution time by 40%</li>
+                <li>Built automation tools/scripts cutting manual effort by 50%</li>
+                <li>Ensured uninterrupted delivery across 8 major projects</li>
+                <li>Directed cross-functional teams for on-time, budget-compliant delivery</li>
+                <li>Specialized in configuration, integration, and verification of nodes & networks</li>
+            </ul>
+        </div>
+        <div class="project-tech">
+            <h4>Tech Stack:</h4>
+            <div class="tech-tags">
+                <span class="tech-tag">Linux</span>
+                <span class="tech-tag">Shell Scripting</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Google Cloud</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">CI/CD</span>
+                <span class="tech-tag">AI/ML</span>            </div>
+        </div>
+        <div class="project-customers">
+            <h4>Major Customers:</h4>
+            <ul>
+                <li><strong>Bharti Airtel (Key Customer at Ericsson – handled majority of activities)</strong></li>
+                <li>Vodafone Egypt</li>
+                <li>Telenor Sweden</li>
+                <li>Cable & Wireless Panama</li>
+                <li>MTN Liberia</li>
+                <li>Airtel Zambia</li>
+                <li>Unitel Angola</li>
+                <li>Djezzy Algeria</li>
+            </ul>
+        </div>
+        <div class="project-impact">
+            <strong>Impact:</strong> Delivered seamless global telecom solutions with 100% uptime, optimized processes, and faster service rollout.
+        </div>
+        <div class="project-actions">
+            <button class="btn btn--outline">View Details</button>
+        </div>
+    </div>
+</div>
                 <!-- Project 1: Linux Server Monitoring Tool (Enhanced) - LIVE DEMO -->
                 <div class="project-card" data-category="ai-ml live-demo">
                     <div class="project-header">
-                        <h3 class="project-title">Linux Server Monitoring Tool</h3>
-                        <div class="project-badges">
+                        <h3 class="project-title text-gradient-animate">Linux Server Monitoring Tool</h3>                        <div class="project-badges">
                             <span class="badge badge--success">Live Demo</span>
                             <span class="badge badge--category">System Administration</span>
                         </div>
@@ -344,217 +410,13 @@
                     </div>
                 </div>
 
-                <!-- Project 5: Kubernetes Automation Suite -->
-                <div class="project-card" data-category="cloud-devops">
-                    <div class="project-header">
-                        <h3 class="project-title">Kubernetes Automation Suite</h3>
-                        <div class="project-badges">
-                            <span class="badge badge--info">Demo on Request</span>
-                            <span class="badge badge--category">Cloud/DevOps</span>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Container orchestration platform with intelligent automation, featuring comprehensive cluster management and advanced deployment strategies.</p>
-                    </div>
-                    <div class="project-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Automated cluster management</li>
-                            <li>CI/CD pipeline integration</li>
-                            <li>Resource optimization</li>
-                            <li>Health monitoring</li>
-                            <li>Auto-scaling capabilities</li>
-                        </ul>
-                    </div>
-                    <div class="project-tech">
-                        <h4>Tech Stack:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Helm</span>
-                            <span class="tech-tag">Prometheus</span>
-                            <span class="tech-tag">Grafana</span>
-                        </div>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Reduced deployment time by 75% and improved resource utilization by 40%
-                    </div>
-                    <div class="project-actions">
-                        <a href="#contact" class="btn btn--primary">Request Demo</a>
-                        <button class="btn btn--outline">View Details</button>
-                    </div>
-                </div>
-
-                <!-- Project 6: AI-Powered Network Optimizer -->
-                <div class="project-card" data-category="ai-ml">
-                    <div class="project-header">
-                        <h3 class="project-title">AI-Powered Network Optimizer</h3>
-                        <div class="project-badges">
-                            <span class="badge badge--info">Demo on Request</span>
-                            <span class="badge badge--category">AI/ML</span>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>ML-driven telecom network optimization and performance enhancement system with predictive analytics and real-time optimization capabilities.</p>
-                    </div>
-                    <div class="project-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Predictive network optimization</li>
-                            <li>Traffic pattern analysis</li>
-                            <li>Performance bottleneck detection</li>
-                            <li>Automated configuration tuning</li>
-                            <li>Real-time monitoring</li>
-                        </ul>
-                    </div>
-                    <div class="project-tech">
-                        <h4>Tech Stack:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">Apache Kafka</span>
-                            <span class="tech-tag">Redis</span>
-                            <span class="tech-tag">D3.js</span>
-                        </div>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Improved network performance by 35% and reduced operational costs by $2.1M annually
-                    </div>
-                    <div class="project-actions">
-                        <a href="#contact" class="btn btn--primary">Request Demo</a>
-                        <button class="btn btn--outline">View Details</button>
-                    </div>
-                </div>
-
-                <!-- Project 7: Cloud Infrastructure Automation -->
-                <div class="project-card" data-category="cloud-devops">
-                    <div class="project-header">
-                        <h3 class="project-title">Cloud Infrastructure Automation</h3>
-                        <div class="project-badges">
-                            <span class="badge badge--info">Demo on Request</span>
-                            <span class="badge badge--category">Cloud/DevOps</span>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Multi-cloud management platform for AWS, Oracle, and GCP with automated provisioning, cost optimization, and comprehensive security compliance.</p>
-                    </div>
-                    <div class="project-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Multi-cloud resource management</li>
-                            <li>Cost optimization</li>
-                            <li>Security compliance</li>
-                            <li>Automated provisioning</li>
-                            <li>Performance monitoring</li>
-                        </ul>
-                    </div>
-                    <div class="project-tech">
-                        <h4>Tech Stack:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Terraform</span>
-                            <span class="tech-tag">AWS</span>
-                            <span class="tech-tag">GCP</span>
-                            <span class="tech-tag">Oracle Cloud</span>
-                            <span class="tech-tag">Ansible</span>
-                        </div>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Reduced infrastructure costs by 45% and improved deployment efficiency by 60%
-                    </div>
-                    <div class="project-actions">
-                        <a href="#contact" class="btn btn--primary">Request Demo</a>
-                        <button class="btn btn--outline">View Details</button>
-                    </div>
-                </div>
-
-                <!-- Project 8: AI-Powered Drone Technology -->
-                <div class="project-card" data-category="ai-ml">
-                    <div class="project-header">
-                        <h3 class="project-title">AI-Powered Drone Technology</h3>
-                        <div class="project-badges">
-                            <span class="badge badge--info">Demo on Request</span>
-                            <span class="badge badge--category">AI/ML</span>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Autonomous fleet management system with intelligent navigation, featuring advanced computer vision and machine learning algorithms for autonomous operations.</p>
-                    </div>
-                    <div class="project-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Autonomous flight control</li>
-                            <li>Real-time path planning</li>
-                            <li>Collision avoidance</li>
-                            <li>Fleet coordination</li>
-                            <li>Mission optimization</li>
-                        </ul>
-                    </div>
-                    <div class="project-tech">
-                        <h4>Tech Stack:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Computer Vision</span>
-                            <span class="tech-tag">ROS</span>
-                            <span class="tech-tag">Machine Learning</span>
-                            <span class="tech-tag">IoT</span>
-                        </div>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Enhanced operational efficiency by 50% and reduced human intervention by 80%
-                    </div>
-                    <div class="project-actions">
-                        <a href="#contact" class="btn btn--primary">Request Demo</a>
-                        <button class="btn btn--outline">View Details</button>
-                    </div>
-                </div>
-
-                <!-- Project 9: AI-based Auto-Healing System -->
-                <div class="project-card" data-category="ai-ml">
-                    <div class="project-header">
-                        <h3 class="project-title">AI-based Auto-Healing System</h3>
-                        <div class="project-badges">
-                            <span class="badge badge--info">Demo on Request</span>
-                            <span class="badge badge--category">AI/ML</span>
-                        </div>
-                    </div>
-                    <div class="project-description">
-                        <p>Predictive maintenance system for Kubernetes with ML-driven healing capabilities, featuring intelligent failure detection and automated remediation.</p>
-                    </div>
-                    <div class="project-features">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Predictive failure detection</li>
-                            <li>Automated remediation</li>
-                            <li>Self-healing capabilities</li>
-                            <li>Performance optimization</li>
-                            <li>Intelligent alerting</li>
-                        </ul>
-                    </div>
-                    <div class="project-tech">
-                        <h4>Tech Stack:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Machine Learning</span>
-                            <span class="tech-tag">Prometheus</span>
-                            <span class="tech-tag">Istio</span>
-                        </div>
-                    </div>
-                    <div class="project-impact">
-                        <strong>Impact:</strong> Reduced system downtime by 85% and improved service reliability to 99.95%
-                    </div>
-                    <div class="project-actions">
-                        <a href="#contact" class="btn btn--primary">Request Demo</a>
-                        <button class="btn btn--outline">View Details</button>
-                    </div>
-                </div>
 
                 <!-- Project 10: Telecom CloudOps Suite -->
                 <div class="project-card" data-category="cloud-devops">
                     <div class="project-header">
                         <h3 class="project-title">Telecom CloudOps Suite</h3>
                         <div class="project-badges">
-                            <span class="badge badge--info">Demo on Request</span>
+                            <span class="badge badge--info">Live Demo</span>
                             <span class="badge badge--category">Cloud/DevOps</span>
                         </div>
                     </div>
@@ -585,7 +447,7 @@
                         <strong>Impact:</strong> Achieved 99.94% network uptime and reduced operational overhead by 55%
                     </div>
                     <div class="project-actions">
-                        <a href="#contact" class="btn btn--primary">Request Demo</a>
+                        <a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/e6c60d8d3d72fd7a50737f4f1e42c6f6/c0c3ef39-c6df-4ef1-b516-9580c12b8bab/index.html" class="btn btn--primary">Live Demo</a>
                         <button class="btn btn--outline">View Details</button>
                     </div>
                 </div>
@@ -595,8 +457,9 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
+        <canvas id="skills-canvas"></canvas>
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="section-title" data-section-number="03">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>Programming Languages</h3>
@@ -668,8 +531,9 @@
 
     <!-- Experience Section - Corrected -->
 <section id="experience" class="experience">
+    <canvas id="experience-canvas"></canvas>
     <div class="container">
-        <h2 class="section-title">Professional Experience</h2>
+        <h2 class="section-title" data-section-number="04">Professional Experience</h2>
         <div class="experience-content">
             <!-- First Experience Item -->
             <div class="experience-item">
@@ -725,8 +589,9 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
+        <canvas id="contact-canvas"></canvas>
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title" data-section-number="05">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
